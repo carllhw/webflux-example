@@ -3,3 +3,17 @@ server:
 spring:
   application:
     name: webflux-example
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include:
+          - beans
+          - env
+          - health
+          - info
+logging:
+  level:
+    io.github.carllhw.example.webflux: debug

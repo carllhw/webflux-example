@@ -7,10 +7,9 @@ import lombok.*;
  *
  * @author carllhw
  */
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class User {
 
